@@ -1,0 +1,9 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo "Build is successful"
+  post_build:
+    commands:
+      - aws s3 cp index.html s3://your-s3-bucket/
