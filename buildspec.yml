@@ -6,4 +6,4 @@ phases:
       - echo "Build is successful"
   post_build:
     commands:
-      - aws s3 cp index.html s3://your-s3-bucket/
+      - aws s3 cp index.html s3://pipeline-test-bucket-helen/
